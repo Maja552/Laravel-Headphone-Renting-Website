@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.table-view-wrapper .pointer-events-none.absolute.inset-y-0.right-0.flex.items-center.px-2.text-gray-700 {
+    display: none
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    background-image: url('https://cdn.discordapp.com/attachments/352204043717705728/1181927772856266752/0gdrwb6d7oa51.jpg');
+    background-size: cover;
+    filter: blur(2px);
+}
+
+
+
+
+
+
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: 178px;
+}
+
+.dropbtn {
+    height: 50px;
+    padding: 28px 10px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    float: left;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    z-index: 100;
+
+    top: 10px;
+    border: 2px solid #ddd;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    height: 32px;
+    padding-top: 6px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
